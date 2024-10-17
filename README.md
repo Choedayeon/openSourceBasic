@@ -29,7 +29,7 @@ wordcloud = WordCloud(width=800, height=400, background_color='white').generate_
 
 plt.figure(figsize=(10, 5))
 plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis('off')  # 축 숨기기
+plt.axis('off')  
 plt.show()
 ```
 ---
