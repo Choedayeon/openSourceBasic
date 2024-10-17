@@ -1,5 +1,39 @@
 # openSourceBasic
 ## 오픈소스기초설계(나반)2팀
 ### 주제: 일반인과 대학생 프로그래머를 위한 아이디어 공유 웹/앱
+***요약***
 
+- 일반인과 대학생 프로그래머들의 아이디어 공유를 통한 다양한 프로젝트 구현하는 것이 목표이다.
+- 핵심 기술로는 **개발자 전문용어 통역기**와 **AI 코드-플로우 차트 변환기**가 있다. 
+- 개발자와 사용자 간 원활한 소톧과 코드의 논리적 오류 파악 용이하다는 장점이 있다. 
+---
+```python
+pip install wordcloud matplotlib
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
+# 개발자들이 자주 사용하는 용어와 빈도수(예시)
+developer_terms = {
+    'UI': 50,
+    'API': 45,
+    'Framework': 40,
+    'Backend': 35,
+    'Frontend': 30,
+    'DevOps': 25,
+    'Cloud': 20,
+    'Database': 15,
+    'Container': 10,
+    'Microservices': 5
+}
+
+# WordCloud 생성
+wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(developer_terms)
+
+# 워드 클라우드 시각화
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')  # 축 숨기기
+plt.show()
+```
+---
+![출력이미지]()
