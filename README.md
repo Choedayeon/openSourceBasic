@@ -36,4 +36,5 @@ plt.axis('off')  # 축 숨기기
 plt.show()
 ```
 ---
-![출력이미지]()
+![출력이미지](https://github.com/Choedayeon/openSourceBasic/blob/main/%EC%9B%8C%EB%93%9C%20%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80.png?raw=true)
+---
